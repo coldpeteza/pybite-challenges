@@ -5,7 +5,7 @@ from typing import List, Tuple, Union, Any
 class Vector:
     """A class for representing 3D vectors represented by three coordinates."""
 
-    def __init__(self, x:int, y:int, z:int) -> None:
+    def __init__(self, x:Union[int,float], y:Union[int,float], z:Union[int,float]) -> None:
         self.x = x
         self.y = y
         self.z = z
