@@ -1,5 +1,5 @@
 import math
-from typing import List, Tuple, Union
+from typing import List, Tuple, Union, Any
 
 
 class Vector:
@@ -11,7 +11,7 @@ class Vector:
         self.z = z
 
     @classmethod
-    def from_list(cls: 'Vector', coords: List[int]) -> 'Vector':
+    def from_list(cls, coords: List[Union[float,int]]) -> 'Vector':
         """Create a new Vector from a list of numbers.
 
         Args:
