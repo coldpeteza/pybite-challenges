@@ -1,7 +1,3 @@
-import operator
-from itertools import accumulate, count, starmap
-from functools import reduce
-import numpy as np
 
 
 def running_mean(sequence):
@@ -13,6 +9,7 @@ def running_mean(sequence):
     for index, item in enumerate(sequence, start=1):
         partial = sequence[:index]
         total = sum(partial)
+
         if index == 1:
             result.append(total)
             continue
@@ -22,7 +19,3 @@ def running_mean(sequence):
 
     return result
 
-
-def meanable(acc, next, bucket):
-    print(acc, next, bucket)
-    return acc + next
