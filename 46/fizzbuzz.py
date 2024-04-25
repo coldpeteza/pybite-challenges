@@ -7,11 +7,16 @@ def fizzbuzz(num: int) -> Union[str, int]:
 
     if num % 3 == 0:
         if num % 5 == 0:
-            result = "FizzBuzz"
-        result = "Fizz"
+            result = "Fizz Buzz"
+        else:
+            result = "Fizz"
     elif num % 5 == 0:
         result = "Buzz"
     else:
         result = num
 
     return result
+
+# if __name__ == '__main__':
+#     for i in range(1, 17):
+#         print(fizzbuzz(i))
